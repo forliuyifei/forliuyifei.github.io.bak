@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/img/dog.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>「踩坑」一台电脑搭建部署第二个hexo博客 | 若风</title>
+    
+        <meta name="keywords" content="undefinedhexo, Loafing-around,INFP,Movies,Books,Hexo-theme-Cards,RSS订阅">
+    
+
+    <!-- OpenGraph -->
+     
+        <meta name="description" content="原来用一个账号也行的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「踩坑」一台电脑搭建部署第二个hexo博客">
+<meta property="og:url" content="https://loafing.cn/posts/27097.html">
+<meta property="og:site_name" content="若风">
+<meta property="og:description" content="原来用一个账号也行的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io@master/img/Aenami.webp">
+<meta property="article:published_time" content="2020-07-09T00:55:55.000Z">
+<meta property="article:modified_time" content="2020-07-11T07:18:59.547Z">
+<meta property="article:author" content="冼仙">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io@master/img/Aenami.webp">
+    
+
+    <!-- feed -->
+    
+        <link rel="alternate" href="/atom.xml" title="若风">
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/solarized-light.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/solarized-dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+        
+            <meta name="google-site-verification" content="jjL9uTbb2Bhw0hj9Ut91Eii6UOfQ8BE8lWnmuGkSZ0k" /> 
+        
+            <meta name="baidu-site-verification" content="IIwBCrwDVB" /> 
+        
+            <meta name="sogou_site_verification" content="OuuJto9tkO"/> 
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="若风" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                若风 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="cover-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="cover-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="cover-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到顶部" title="回到顶部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="dropdown-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="dropdown-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="dropdown-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        「踩坑」一台电脑搭建部署第二个hexo博客
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/07/" class="button" style="color: #808080;">
+    2020 七月 9日 , 星期四 , 08:55 早上
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/%E5%8E%9F%E5%88%9B/" class="button">原创</a>
+
+ 
+        
+        
+     
+ 
+
+  
+    </div>
+</div>
+
+
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                    
+    <img alt="Cover Image" src="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io@master/img/Aenami.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io@master/img/Aenami.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==">
+ 
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 <span id="expire-date"></span> 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-07-11"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <p>前天新买的loafing.cn域名，想着再整一个博客，换上轻量极速的Card主题。</p>
+<p>之前听人说GitHub只能一个号对应一个博客仓库，我信了。</p>
+<p>参考这篇：<a href="https://blog.csdn.net/qq_36759224/article/details/86546729" target="_blank" rel="noopener">一台电脑部署两个或多个 Hexo 博客（一台电脑使用两个或多个 GitHub 账号）</a></p>
+<p>又注册一个小号，折腾来折腾去，最终死活过不了ssh那关，明明两个账号的验证应该都没问题。依次执行以下命令</p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">ssh -T <span class="symbol">git@</span>github.com</span><br><span class="line">ssh -T <span class="symbol">git@</span>新号用户名.github.com</span><br></pre></td></tr></table></figure>
+<p>依次显示以下信息</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">Hi 我的第一个默认GitHub账户名! Yo<span class="string">u've successfully authenticated, but GitHub does not provide shell access.</span></span><br><span class="line"><span class="string">Hi 新增的小号GitHub账户名! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>兴冲冲地<code>hexo d</code>,结果出现</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">Permission <span class="keyword">to</span> xxxxxxx（第二个博客仓库地址）.io.git denied <span class="keyword">to</span> yyyyyyy(第一个博客的邮箱)</span><br></pre></td></tr></table></figure>
+
+<p>感情它还是默认以原来的GitHub账号进行验证???</p>
+<p>难受，不知道怎么办了。</p>
+<hr>
+<p>又找到这篇：<a href="http://unangela.com/2018/05/04/%E4%BD%BF%E7%94%A8GitHub%E6%90%AD%E5%BB%BA%E7%AC%AC2%E4%B8%AAHexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">使用GitHub搭建第二个Hexo博客</a></p>
+<p>原来用一个账号也行的。</p>
+<p>使用一个账号管理两个 hexo，就是再开一个库的问题而已：</p>
+<ul>
+<li>新建一个仓库，随便命名 name（已经有的跳过这步，比如我的主站<code>liuyifei.club</code>对应的<code>forliuyifei.github.io</code>）</li>
+<li>新建一个备份仓库，name.bak（<code>forliuyifei.github.io.bak</code>）</li>
+<li>本地部署 hexo<ul>
+<li>跟第一个hexo文件夹平行，新建一个文件夹，</li>
+<li>进去，Git Bash here，执行<code>hexo init</code>，进行初始化，等待…</li>
+<li>主题切换和本地预览不赘述…</li>
+<li>安装 hexo-deployer-git。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure></li>
+<li>_config.yml修改<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> https:<span class="comment">//github.com/forliuyifei/forliuyifei.github.io.bak.git</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><del>config 设置url: <a href="http://yoursite.com/name，root" target="_blank" rel="noopener">http://yoursite.com/name，root</a>: /name/</del></li>
+<li>我因为有新域名，所以设置的是 url: <a href="http://loafing.cn">http://loafing.cn</a>  root: /</li>
+<li>激动人心的时刻到了，<code>hexo d</code>推送到GitHub（又让我输入账号密码，emmmm烦人不是已经验证过ssh了吗，anyway至少能用了）</li>
+<li>新仓库的setting里面找到<code>GitHub Pages</code>，把Source切换至<code>master branch</code>，Custom domain输入新域名loafing.cn保存。（神奇，怎么秒成功？直接打开 <a href="https://loafing.cn/">https://loafing.cn/</a> 展示的就是刚刚成功部署的hexo博客，连DNS解析都没另外设置）</li>
+<li>OVER</li>
+</ul>
+<hr>
+<p>过了不到半小时，<a href="https://loafing.cn/">https://loafing.cn/</a> 和 <a href="http://forliuyifei.github.io/forliuyifei.github.io.bak" target="_blank" rel="noopener">http://forliuyifei.github.io/forliuyifei.github.io.bak</a> 显示不安全，我再看看。</p>
+<p><strong>解决：</strong></p>
+<ul>
+<li>去腾讯云DNS添加A解析<code>@    A    默认    185.199.108.153</code></li>
+<li>www CNAME 的记录值不知道该设置为什么…</li>
+</ul>
+<hr>
+<p>原来把部署格式换成以下代码就好了，不用次次输入用户名和密码。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"># Deployment仓库部署</span><br><span class="line">## Doc<span class="variable">s:</span> http<span class="variable">s:</span>//hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo:</span><br><span class="line">	  githu<span class="variable">b:</span> git@github.<span class="keyword">com</span>:forliuyifei/forliuyifei.github.io.bak.git,master</span><br><span class="line">	  codin<span class="variable">g:</span> git@e.coding.ne<span class="variable">t:forzqx</span>/forzqx.coding.<span class="keyword">me</span>.bak/forzqx.coding.<span class="keyword">me</span>.bak.git,master</span><br></pre></td></tr></table></figure>
+
+<p>Bing和Google牛逼，收录方便，抓取极快。</p>
+<p>国内的百度和搜狗真的辣鸡，不是卡验证就是迟迟不抓取我的新网页，按道理做了这么多年的搜索引擎不至于这么烂吧🤬</p>
+<!--
+<iframe src="/Donate/simple" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:0px; width:100%;"  frameborder="0" scrolling="no"></iframe>
+-->
+                </div>
+            </div>
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>冼仙
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://loafing.cn/posts/27097.html">https://loafing.cn/posts/27097.html</a>
+        </p>
+        
+            <strong>
+                <p>本站所有文章除特别声明外，均采用 <a href="/posts/Creative-Commons-licenses.html#CC-BY-NC-SA-4-0" title="署名-非商业性使用-相同方式共享">CC BY-NC-SA 4.0协议</a> 。转载请注明原作者及出处！</p>
+
+            </strong>
+        
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020 七月 11日 , 星期六 , 15:18 下午
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
+    
+        <a href="/categories/%E5%8E%9F%E5%88%9B/" class="post-cats__link button">原创</a>
+    
+    
+        <a href="/tags/hexo/" class="post-tags__link button"># hexo</a>
+    
+</div> 
+             
+        </article>
+        
+            <div class="post__comments content-card">
+                
+    <h4 style="margin-top: 0;">评论</h4>
+    
+        <div id="disqus_thread">您所在的地区可能无法访问 Disqus 评论系统，请切换网络环境再尝试。</div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+            </div>
+        
+    </div>
+
+
+</main>
+<footer class="footer">
+     
+
+
+     
+  
+    
+        
+            <p><a href="mailto:forzqx@qq.com" title="要紧事请发邮件，评论不一定及时回复">Email</a></p>
+
+        
+            <p>Copyright © 2020</p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
+
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+    
+<script src="/js/b2t.js"></script>
+
+
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
+            <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+            <script>
+                new DisqusJS({
+                    shortname: 'loafing',
+                    siteName: '若风',
+                    api: 'https://disqus.skk.moe/disqus/',
+                    apikey: 'rIX6mM39eSMZlAnZCchjnNRaL4sRMZvbUICi5oLnDShkSE23zY5Vw2EZ7dGwYHBn',
+                    admin: 'CyberLoafing',
+                    identifier: 'posts/27097.html',
+                    url: 'https://loafing.cn/posts/27097.html',
+                    nesting: '4'
+                });
+            </script>
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+    </body>
+</html>

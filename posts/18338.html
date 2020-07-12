@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/img/dog.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>「折腾」Hexo-Cards主题自定义 | 若风</title>
+    
+        <meta name="keywords" content="undefined, Loafing-around,INFP,Movies,Books,Hexo-theme-Cards,RSS订阅">
+    
+
+    <!-- OpenGraph -->
+     
+        <meta name="description" content="美化、添加赞赏码、Artitalk说说系统、网站运行时间……自己动手，丰衣足食。（bugs狂魔）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「折腾」Hexo-Cards主题自定义">
+<meta property="og:url" content="https://loafing.cn/posts/18338.html">
+<meta property="og:site_name" content="若风">
+<meta property="og:description" content="美化、添加赞赏码、Artitalk说说系统、网站运行时间……自己动手，丰衣足食。（bugs狂魔）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/css01.webp">
+<meta property="article:published_time" content="2020-07-12T14:09:16.767Z">
+<meta property="article:modified_time" content="2020-07-12T17:05:51.618Z">
+<meta property="article:author" content="冼仙">
+<meta property="article:tag" content="Loafing-around">
+<meta property="article:tag" content="INFP">
+<meta property="article:tag" content="Movies">
+<meta property="article:tag" content="Books">
+<meta property="article:tag" content="Hexo-theme-Cards">
+<meta property="article:tag" content="RSS订阅">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/css01.webp">
+    
+
+    <!-- feed -->
+    
+        <link rel="alternate" href="/atom.xml" title="若风">
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/solarized-light.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/solarized-dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+        
+            <meta name="google-site-verification" content="jjL9uTbb2Bhw0hj9Ut91Eii6UOfQ8BE8lWnmuGkSZ0k" /> 
+        
+            <meta name="baidu-site-verification" content="IIwBCrwDVB" /> 
+        
+            <meta name="sogou_site_verification" content="OuuJto9tkO"/> 
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="若风" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                若风 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="cover-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="cover-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="cover-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到顶部" title="回到顶部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="dropdown-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="dropdown-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="dropdown-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        「折腾」Hexo-Cards主题自定义
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/07/" class="button" style="color: #808080;">
+    2020 七月 12日 , 星期日 , 22:09 晚上
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/%E5%8E%9F%E5%88%9B/" class="button">原创</a>
+
+ 
+        
+        
+     
+ 
+
+  
+    </div>
+</div>
+
+
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#暂时不做整理"><span class="toc-text">暂时不做整理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo博客添加赞赏功能"><span class="toc-text">hexo博客添加赞赏功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#美化"><span class="toc-text">美化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮"><span class="toc-text">代码高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#便签仿Fluid主题"><span class="toc-text">便签仿Fluid主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引入Artitalk说说系统"><span class="toc-text">引入Artitalk说说系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页脚添加网站运行时间"><span class="toc-text">页脚添加网站运行时间</span></a></li></ol></li></ol>
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                    
+    <img alt="Cover Image" src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/css01.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/css01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==">
+ 
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 <span id="expire-date"></span> 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-07-13"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <h2 id="暂时不做整理"><a href="#暂时不做整理" class="headerlink" title="暂时不做整理"></a>暂时不做整理</h2><blockquote class="blockquote-note blockquote-note__primary"><div class="blockquote-note__header">primary</div><div class="blockquote-note__content"><p>愿在衣而为领，承华首之余芳；<br>悲罗襟之宵离，怨秋夜之未央！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__secondary"><div class="blockquote-note__header">secondary</div><div class="blockquote-note__content"><p>愿在裳而为带，束窈窕之纤身；<br>嗟温凉之异气，或脱故而服新！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__info"><div class="blockquote-note__header"><div class="blockquote-note__icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>info</div><div class="blockquote-note__content"><p>愿在发而为泽，刷玄鬓于颓肩；<br>悲佳人之屡沐，从白水而枯煎！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__danger"><div class="blockquote-note__header">danger</div><div class="blockquote-note__content"><p>愿在眉而为黛，随瞻视以闲扬；<br>悲脂粉之尚鲜，或取毁于华妆！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__success"><div class="blockquote-note__header">success</div><div class="blockquote-note__content"><p>愿在莞而为席，安弱体于三秋；<br>悲文茵之代御，方经年而见求！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__warning"><div class="blockquote-note__header"><div class="blockquote-note__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></div>warning</div><div class="blockquote-note__content"><p>愿在丝而为履，附素足以周旋；<br>悲行止之有节，空委弃于床前！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__tip"><div class="blockquote-note__header"><div class="blockquote-note__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></div>tip</div><div class="blockquote-note__content"><p>愿在昼而为影，常依形而西东；<br>悲高树之多荫，慨有时而不同！</p>
+</div></blockquote>
+
+<blockquote class="blockquote-note blockquote-note__light"><div class="blockquote-note__header">light</div><div class="blockquote-note__content"><p>愿在夜而为烛，照玉容于两楹；<br>悲扶桑之舒光，奄灭景而藏明！</p>
+</div></blockquote>
+
+
+
+
+<h3 id="hexo博客添加赞赏功能"><a href="#hexo博客添加赞赏功能" class="headerlink" title="hexo博客添加赞赏功能"></a>hexo博客添加赞赏功能</h3><p>效果：</p>
+<iframe src="https://loafing.cn/Donate/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:100px; width:100%;"  frameborder="0" scrolling="no"></iframe>  
+
+<p>也可以直接打开 <a href="https://loafing.cn/Donate/simple/">https://loafing.cn/Donate/simple/</a> 查看</p>
+<p>一行代码调用（嗯主站 liuyifei.club 也可以直接插入）</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;iframe <span class="attribute">src</span>=<span class="string">"https://loafing.cn/Donate/simple/"</span> <span class="attribute">style</span>=<span class="string">"overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:100px; width:100%;"</span>  <span class="attribute">frameborder</span>=<span class="string">"0"</span> <span class="attribute">scrolling</span>=<span class="string">"no"</span>&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p>源码来自：<a href="https://github.com/Kaiyuan/sponsor-page" target="_blank" rel="noopener">https://github.com/Kaiyuan/sponsor-page</a>  </p>
+<p><strong>具体操作：</strong></p>
+<ul>
+<li><p>下载源码解压后放在自己站点的source文件夹下面，我这里的位置是<code>source/Donate/simple</code>，所用到的图片、html、js、css文件都在这儿。</p>
+</li>
+<li><p>使用 iframe 嵌入页面的代码，高度至少 240px，宽度至少 310px！<br>我加在footer.ejs合适的位置，240px的高度会产出过多空白，这里改成100px也能使赞赏码显示完整。（谁让我这么菜呢，又偷不到其它合适的源码🙉）</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;iframe <span class="attribute">src</span>=<span class="string">"/Donate/simple"</span> <span class="attribute">style</span>=<span class="string">"overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:100px; width:100%;"</span>  <span class="attribute">frameborder</span>=<span class="string">"0"</span> <span class="attribute">scrolling</span>=<span class="string">"no"</span>&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+<p>src=后面是赞赏页面的地址，记得提前在hexo根目录配置文件添加</p>
+<figure class="highlight haml"><table><tr><td class="code"><pre><span class="line">skip_render:</span><br><span class="line">-<span class="ruby"> Donate/** <span class="comment">#赞赏插件存放位置</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>避免md和html文件被hexo主题渲染。</strong></p>
+</li>
+<li><p>修改simple/index.html<br>不必要的内容都删除或者注释掉，只保留支付宝和微信赞赏码；<br>删除/替换.js文件，否则加载太慢；<br>跳转GitHub换成发邮件；</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">  <span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Sponsor-Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui"</span> /&gt;</span><span class="comment">&lt;!--禁止缩放--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"style.css"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>  <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--	&lt;script  src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">	 clipboard.js 是 JS 复制文本的库 用不着--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"script.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"github"</span> <span class="attr">href</span>=<span class="string">"mailto:123456@qq.com"</span>  <span class="attr">class</span>=<span class="string">"pos-f tr3"</span> <span class="attr">title</span>=<span class="string">"给我发邮件"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"DonateText"</span> <span class="attr">class</span>=<span class="string">"tr3"</span>&gt;</span>Sponsor<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"donateBox"</span> <span class="attr">class</span>=<span class="string">"list pos-f tr3"</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--没有这两个东西	&lt;li id="PayPal"&gt;&lt;a href="https://www.paypal.me/forzqx" target="_blank"&gt;PayPal&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="comment">		&lt;li id="BTC" data-footnote="Copy addres and show QRCod"&gt;&lt;button id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard"&gt;Bitcoin&lt;/button&gt;&lt;/li&gt; --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">"AliPay"</span>&gt;</span>AliPay<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">"WeChat"</span>&gt;</span>WeChat<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"QRBox"</span> <span class="attr">class</span>=<span class="string">"pos-f left-100"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"MainBox"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- Bitcoin 账号 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btc-key"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">"lyfnull"</span> <span class="attr">readonly</span>=<span class="string">"readonly"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改simple/style.css<br>整体下移沉底；<br>把原来的GitHub图标换成小飞机，去 <a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里巴巴矢量库</a> 下载合适的svg图片予以替换</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">  <span class="selector-tag">html</span>, <span class="selector-tag">html</span>&gt;<span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">font-family</span>: <span class="string">"Helvetica Neue"</span>, Ubuntu, <span class="string">"WenQuanYi Micro Hei"</span>, Helvetica, <span class="string">"Hiragino Sans GB"</span>, <span class="string">"Microsoft YaHei"</span>, <span class="string">"Wenquanyi Micro Hei"</span>, <span class="string">"WenQuanYi Micro Hei Mono"</span>, <span class="string">"WenQuanYi Zen Hei"</span>, <span class="string">"WenQuanYi Zen Hei"</span>, <span class="string">"Apple LiGothic Medium"</span>, <span class="string">"SimHei"</span>, <span class="string">"ST Heiti"</span>, <span class="string">"WenQuanYi Zen Hei Sharp"</span>, Arial, sans-serif;</span><br><span class="line">	<span class="attribute">-webkit-font-smoothing</span>:antialiased;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">1.8em</span>;</span><br><span class="line">	<span class="attribute">text-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">1px</span> <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.1</span>);</span><br><span class="line">	<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">img</span> &#123;<span class="attribute">border-width</span>: <span class="number">0px</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">text-decoration</span>: none;</span><br><span class="line">	<span class="attribute">outline</span>:none;</span><br><span class="line">	<span class="attribute">border</span>:none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.list</span>, <span class="selector-class">.list</span> <span class="selector-tag">li</span>, <span class="selector-class">.list-left</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">	<span class="attribute">list-style</span>: none;</span><br><span class="line">	<span class="attribute">list-style-type</span>: none;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pos-f</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: fixed;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-100</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.blur</span> &#123;</span><br><span class="line">	<span class="attribute">-webkit-filter</span>: <span class="built_in">blur</span>(<span class="number">3px</span>);</span><br><span class="line">	<span class="attribute">filter</span>: <span class="built_in">blur</span>(<span class="number">3px</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.tr3</span> &#123;</span><br><span class="line">	<span class="attribute">transition</span>: all .<span class="number">3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#DonateText</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: fixed;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#ffd886</span> <span class="built_in">url</span>(images/like.svg) no-repeat center <span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">35px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">36px</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">90%</span> - <span class="number">60px</span>);</span><br><span class="line">	<span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotatez</span>(-<span class="number">15deg</span> );</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> &#123;</span><br><span class="line">	<span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">76px</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">90%</span> - <span class="number">15px</span>);</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">width</span>: auto;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">28px</span>;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">74px</span>;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">border-left</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line">	<span class="attribute">background</span>: no-repeat center center;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">204</span>, <span class="number">217</span>, <span class="number">220</span>,<span class="number">0.1</span>);</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">45px</span>;</span><br><span class="line">	<span class="attribute">transition</span>: all .<span class="number">3s</span>;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">600px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">28px</span>;</span><br><span class="line">	<span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-tag">li</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">204</span>, <span class="number">217</span>, <span class="number">220</span>,<span class="number">0.3</span>);</span><br><span class="line">	<span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(<span class="number">0</span>);</span><br><span class="line">	<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">0</span>);</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">	<span class="attribute">border-width</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-id">#PayPal</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(images/paypal.svg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span>&gt;<span class="selector-id">#BTC</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(images/bitcoin.svg);</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">28px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span>&gt;<span class="selector-id">#BTC</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="attribute">overflow</span>: visible;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#BTC</span>&gt;<span class="selector-tag">button</span> &#123;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-id">#AliPay</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(images/alipay.svg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#donateBox</span> <span class="selector-id">#WeChat</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(images/wechat.svg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#QRBox</span> &#123;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="attribute">display</span>: none;</span><br><span class="line">    <span class="attribute">perspective</span>: <span class="number">400px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#MainBox</span> &#123;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">100px</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">100px</span>);</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#fff</span> no-repeat center center;</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">190px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">2px</span> <span class="number">7px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.3</span>);</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">transition</span>: all <span class="number">1s</span> ease-in-out;</span><br><span class="line">	<span class="attribute">transform-style</span>: preserve-<span class="number">3</span>d;</span><br><span class="line">    <span class="attribute">transform-origin</span>: center center;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#btc-key</span> &#123;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">8px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#github</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> + <span class="number">50px</span>);</span><br><span class="line">	<span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">90%</span> - <span class="number">36px</span>);</span><br><span class="line">	<span class="attribute">background</span>: no-repeat center center <span class="built_in">url</span>(images/plane.svg);</span><br><span class="line">	<span class="attribute">background-size</span>: contain;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.3</span>;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotatez</span>(<span class="number">0deg</span> );</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: relative;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="attribute">overflow</span>: visible;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">::before</span>, <span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">transition</span>: all .<span class="number">3s</span>;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(-<span class="number">50%</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">37px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="built_in">attr</span>(data-footnote);</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">0.8</span>);</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0</span> <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">	<span class="attribute">white-space</span>: nowrap;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">37px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">5px</span> solid <span class="number">#333</span>;</span><br><span class="line">	<span class="attribute">border-color</span>: <span class="built_in">rgba</span>(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">0.8</span>) transparent transparent transparent;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">37px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>,<span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>,<span class="selector-attr">[data-footnote]</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(-<span class="number">50%</span>,-<span class="number">7px</span>,<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#MainBox</span><span class="selector-class">.showQR</span> &#123;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">animation-name</span>:showQR;</span><br><span class="line">    <span class="attribute">animation-duration</span>:<span class="number">3s</span>;</span><br><span class="line">    <span class="attribute">animation-timing-function</span>:ease-in-out;</span><br><span class="line">    <span class="attribute">animation-iteration-count</span>:<span class="number">1</span>;</span><br><span class="line">    <span class="attribute">animation-fill-mode</span>:forwards;</span><br><span class="line">    <span class="attribute">-webkit-animation</span>:showQR <span class="number">3s</span> ease-in-out <span class="number">0s</span> <span class="number">1</span> normal forwards;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> showQR &#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">90deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	8% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">60deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	18% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">40deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	34% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">28deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	44% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">18deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	58% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">12deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	72% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">9deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	88% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">5deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	96% &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">2deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-tag">to</span> &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#MainBox</span><span class="selector-class">.hideQR</span> &#123;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">animation-name</span>:hideQR;</span><br><span class="line">    <span class="attribute">animation-duration</span>:<span class="number">0.5s</span>;</span><br><span class="line">    <span class="attribute">animation-timing-function</span>:ease-in-out;</span><br><span class="line">    <span class="attribute">animation-iteration-count</span>:<span class="number">1</span>;</span><br><span class="line">    <span class="attribute">animation-fill-mode</span>:forwards;</span><br><span class="line">    <span class="attribute">-webkit-animation</span>:hideQR <span class="number">0.5s</span> ease-in-out <span class="number">0s</span> <span class="number">1</span> normal forwards;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> hideQR &#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;</span><br><span class="line">	&#125;</span><br><span class="line">	20%,50% &#123;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.08</span>,<span class="number">1.08</span>);</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-tag">to</span> &#123;</span><br><span class="line">		<span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">40deg</span>) <span class="built_in">scale</span>(<span class="number">0.6</span>,<span class="number">0.6</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>images文件夹下面的图片全部改成自己的，建议使用webp格式压缩。</p>
+<p>大概就这样吧，凑合用。</p>
+</li>
+<li><p>不行，严重拖慢首页打开速度，相关文件全部都得套上jsd才能加速访问。<br>考虑暂时在页脚关闭它，放在FAQ页面或者按需插入文章页就好。<br>（放了也白放🤦‍♂️）</p>
+</li>
+</ul>
+<hr>
+<h3 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h3><ul>
+<li>首页LOGO加圆框、光晕<br>方形头像太丑太尖锐，又懒得每次动手裁剪成圆形</li>
+<li>友链卡片圆角</li>
+<li>首页文章卡片彩色光晕动画</li>
+</ul>
+<p>步骤：</p>
+<ul>
+<li>先将主题配置文件里面的固定样式用#号注释掉<code>style: #https://cdn.jsdelivr.net/npm/hexo-theme-cards@0.6.1/dist/css/style.min.css</code></li>
+<li>自定义css或者找个已有的<code>_defines.styl</code>文件加入</li>
+</ul>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//顶部logo圆框、光晕</span></span><br><span class="line">.cover .cover__logo img &#123;</span><br><span class="line">    max-width: <span class="number">100</span>%;</span><br><span class="line">    border-radius: <span class="number">100</span>px;</span><br><span class="line">    box-shadow: rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.16</span>) <span class="number">0</span>px <span class="number">2</span>px <span class="number">5</span>px <span class="number">0</span>px, rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.12</span>) <span class="number">0</span>px <span class="number">2</span>px <span class="number">10</span>px <span class="number">0</span>px;</span><br><span class="line">    cursor: pointer </span><br><span class="line">    transition: all <span class="number">0.4</span>s</span><br><span class="line">      &amp;:hover &#123;box-shadow:<span class="number">0</span> <span class="number">2</span>px <span class="number">6</span>px <span class="number">1</span>px rgba(<span class="number">36</span>,<span class="number">146</span>,<span class="number">165</span>,<span class="number">0.4</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//友链卡片圆角</span></span><br><span class="line">.links-list .links-content .links-card &#123;</span><br><span class="line">    border-radius: <span class="number">0</span> <span class="number">0</span> <span class="number">5</span>px <span class="number">5</span>px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//首页文章卡片彩色光晕，文章页鼠标悬浮有bug，难受，大概我改的部分层级高了点，先弃用</span></span><br><span class="line">.content-card </span><br><span class="line">   cursor: pointer</span><br><span class="line">   &amp;:hover</span><br><span class="line">     box-shadow:<span class="number">0</span>px <span class="number">8</span>px <span class="number">15</span>px rgba(<span class="number">36</span>,<span class="number">146</span>,<span class="number">165</span>,<span class="number">0.4</span>) !important</span><br><span class="line">     border-radius: <span class="number">8</span>px</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p>换成<code>https://cdn.jsdelivr.net/gh/ChrAlpha/hexo-theme-cards@master/dist/css/highlight/solarized-light.min.css</code></p>
+<p>怪怪的bug，随它就这样吧，弃疗。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">//消除代码块背景边条bug，我也不懂原理，反正有效。</span></span><br><span class="line">.highlight</span><br><span class="line">    <span class="attribute">padding</span> <span class="number">0</span> !important</span><br></pre></td></tr></table></figure>
+
+<h3 id="便签仿Fluid主题"><a href="#便签仿Fluid主题" class="headerlink" title="便签仿Fluid主题"></a>便签仿Fluid主题</h3><p><a href="/posts/44022.html#note%E6%A0%87%E7%AD%BE"><strong>效果预览</strong></a></p>
+<ul>
+<li>注释掉主题配置文件里的note样式，换成本地的css：<code>note: /css/note.css #https://cdn.jsdelivr.net/npm/hexo-theme-cards@0.6/dist/css/note.min.css</code></li>
+<li>修改<code>cards/source/css/note.styl</code><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">  .blockquote-note</span><br><span class="line">    margin <span class="number">1</span>rem calc(<span class="number">0</span>rem - var(--space))</span><br><span class="line">    padding <span class="number">1</span>rem var(--space)</span><br><span class="line">    transition transform <span class="number">.3</span>s, background-color <span class="number">.3</span>s, box-shadow <span class="number">.6</span>s</span><br><span class="line">    <span class="comment">/*注释掉，使侧边条显示border none !important*/</span></span><br><span class="line">    margin-left: <span class="number">5</span>px;</span><br><span class="line">    margin-right: <span class="number">5</span>px;</span><br><span class="line">    border-radius: <span class="number">.35</span>rem;</span><br><span class="line">    border-left: <span class="number">.45</span>rem solid;</span><br><span class="line">    </span><br><span class="line">    .blockquote-note__header</span><br><span class="line">        font-family miriam libre, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc, microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji, Varela Round</span><br><span class="line">        font-size <span class="number">1.125</span>em</span><br><span class="line">        font-weight <span class="number">550</span></span><br><span class="line">        margin-bottom <span class="number">0</span>px</span><br><span class="line">        margin-left: <span class="number">-18</span>px;</span><br><span class="line">        margin-top: <span class="number">-10</span>px;</span><br><span class="line"></span><br><span class="line">    .blockquote-note__content</span><br><span class="line">        color var(--body-color) !important</span><br><span class="line">        margin-left: <span class="number">-18</span>px;</span><br><span class="line">        margin-right: <span class="number">-18</span>px;</span><br><span class="line">        margin-bottom: <span class="number">-20</span>px;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.blockquote-note__info</span><br><span class="line">    color #<span class="number">2492</span>a5 !important</span><br><span class="line">    background-color rgba(<span class="number">0</span>,<span class="number">113</span>,<span class="number">243</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #<span class="number">2492</span>a5;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">36</span>,<span class="number">146</span>,<span class="number">165</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__success</span><br><span class="line">    color #<span class="number">49</span>a75f !important</span><br><span class="line">    background-color rgba(<span class="number">25</span>,<span class="number">204</span>,<span class="number">150</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #<span class="number">49</span>a75f;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">73</span>,<span class="number">167</span>,<span class="number">95</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__tip</span><br><span class="line">    color #d400ff !important</span><br><span class="line">    background-color rgba(<span class="number">212</span>,<span class="number">0</span>,<span class="number">255</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #d400ff;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">212</span>,<span class="number">0</span>,<span class="number">255</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__warning</span><br><span class="line">    color #f5a623 !important</span><br><span class="line">    background-color rgba(<span class="number">245</span>,<span class="number">166</span>,<span class="number">35</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #c2a442;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">194</span>,<span class="number">164</span>,<span class="number">66</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__danger</span><br><span class="line">    color #e00 !important</span><br><span class="line">    background-color rgba(<span class="number">224</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #e45460;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">228</span>,<span class="number">84</span>,<span class="number">96</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__primary</span><br><span class="line">    color #<span class="number">0070f</span>3 !important</span><br><span class="line">    background-color rgba(<span class="number">23</span>, <span class="number">106</span>, <span class="number">196</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #<span class="number">176</span>ac4;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">23</span>,<span class="number">106</span>,<span class="number">196</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br><span class="line"></span><br><span class="line">.blockquote-note__secondary</span><br><span class="line">    color #<span class="number">58595</span>a !important</span><br><span class="line">    background-color rgba(<span class="number">88</span>, <span class="number">89</span>, <span class="number">90</span>,<span class="number">0.1</span>)</span><br><span class="line">    border-color: #<span class="number">58595</span>a;</span><br><span class="line">    cursor: pointer</span><br><span class="line">    transition: all <span class="number">0.5</span>s</span><br><span class="line">    &amp;:hover</span><br><span class="line">      transform: scale(<span class="number">1.0</span>) translate(<span class="number">0</span>px,<span class="number">-2</span>px) </span><br><span class="line">      box-shadow:<span class="number">6</span>px <span class="number">6</span>px <span class="number">16</span>px rgba(<span class="number">88</span>,<span class="number">89</span>,<span class="number">90</span>,<span class="number">0.4</span>)</span><br><span class="line">      border-radius: <span class="number">0.25</span>rem</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="引入Artitalk说说系统"><a href="#引入Artitalk说说系统" class="headerlink" title="引入Artitalk说说系统"></a>引入Artitalk说说系统</h3><p><a href="/weibo/">预览</a></p>
+<p>方法:</p>
+<ul>
+<li>新建一个页面，命名为weibo，头部添加<code>layout: weibo</code></li>
+<li>在Cards主题的layout目录下新建一个weibo.ejs，填入以下代码（又有bug，我尽力了🤦‍♂️）<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;main <span class="class"><span class="keyword">class</span></span>=<span class="string">"main"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"post-title"</span>&gt;</span><br><span class="line">    &lt;h1 <span class="class"><span class="keyword">class</span></span>=<span class="string">"post-title__text"</span>&gt;</span><br><span class="line">        说说（顶部样式咋整啊这🙉）</span><br><span class="line">    &lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"post__with-side"</span>&gt;</span><br><span class="line">        &lt;aside <span class="class"><span class="keyword">class</span></span>=<span class="string">"post-side"</span>&gt;</span><br><span class="line"></span><br><span class="line">        &lt;<span class="regexp">/aside&gt;</span></span><br><span class="line"><span class="regexp">        &lt;article class="post content-card"&gt;</span></span><br><span class="line"><span class="regexp">            &lt;div class="post__header"&gt;</span></span><br><span class="line"><span class="regexp">                                </span></span><br><span class="line"><span class="regexp">        &lt;img alt="Cover Image" src="https:/</span><span class="regexp">/cdn.jsdelivr.net/g</span>h/forliuyifei/img@mater/img/Cover/<span class="number">28</span>%<span class="number">20</span>(<span class="number">2</span>).webp<span class="string">"&gt;</span></span><br><span class="line"><span class="string">       </span></span><br><span class="line"><span class="string">            &lt;/div&gt;</span></span><br><span class="line"><span class="string">            &lt;div class="</span>post__content<span class="string">"&gt;</span></span><br><span class="line"><span class="string">                &lt;div class="</span>md-content<span class="string">"&gt;</span></span><br><span class="line"><span class="string">                    &lt;script src="</span>https:<span class="comment">//cdn.staticfile.org/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line">                    &lt;body&gt;</span><br><span class="line">                        &lt;script&gt;</span><br><span class="line">                        <span class="keyword">var</span> appID=<span class="string">"6zMBu0eTpU4cctLpbCMwJN88-MdYXbMMI"</span>;</span><br><span class="line">                        <span class="keyword">var</span> appKEY=<span class="string">"9ky5bLwQquoNzTjSn5YEgcos"</span>;</span><br><span class="line">                        <span class="keyword">var</span> per=<span class="number">5</span>;</span><br><span class="line">                        <span class="keyword">var</span> bgimg=<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io@master/img/loading.gif"</span>;</span><br><span class="line">                        <span class="keyword">var</span> atemoji_array=&#123;</span><br><span class="line">                                jump: <span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/jump.gif"</span>,</span><br><span class="line">                                eat:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/eat.gif"</span>,</span><br><span class="line">                                run:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/run.gif"</span>,</span><br><span class="line">                                lalala:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/lalala.gif"</span>,</span><br><span class="line">                                sexy:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/sexy_rabbit.gif"</span>,</span><br><span class="line">                                wawawa:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/wawawa.gif"</span>,</span><br><span class="line">                                wolf:<span class="string">"https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020-6/wolf.gif"</span></span><br><span class="line">                          &#125;</span><br><span class="line">                        &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">                        &lt;div id="artitalk_main"&gt;&lt;/</span>div&gt;</span><br><span class="line">                        &lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://cdn.jsdelivr.net/npm/artitalk"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">                    &lt;/</span>body&gt;</span><br><span class="line">                &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">             </span><br><span class="line">        &lt;<span class="regexp">/article&gt;</span></span><br><span class="line"><span class="regexp">        &lt;br&gt;</span></span><br><span class="line"><span class="regexp">        </span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="regexp">/main&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="页脚添加网站运行时间"><a href="#页脚添加网站运行时间" class="headerlink" title="页脚添加网站运行时间"></a>页脚添加网站运行时间</h3><p>在主题的layout文件夹下面找到footer.ejs，将以下代码加进<code>&lt;/footer&gt;</code>前面</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> <span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"timeDate"</span>&gt;</span>世间安得双全法<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"times"</span>&gt;</span>不负如来不负卿<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span><br><span class="line"><span class="actionscript">    <span class="function"><span class="keyword">function</span> <span class="title">createtime</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> grt= <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"07/09/2020 08:00:00"</span>);<span class="comment">//此处修改你的建站时间或者网站上线时间</span></span></span><br><span class="line">        now.setTime(now.getTime()+250);</span><br><span class="line">        days = (now - grt ) / 1000 / 60 / 60 / 24;</span><br><span class="line"><span class="javascript">        dnum = <span class="built_in">Math</span>.floor(days);</span></span><br><span class="line">        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);</span><br><span class="line"><span class="javascript">        hnum = <span class="built_in">Math</span>.floor(hours);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span>(<span class="built_in">String</span>(hnum).length ==<span class="number">1</span> )&#123;</span></span><br><span class="line"><span class="actionscript">            hnum = <span class="string">"0"</span> + hnum;</span></span><br><span class="line">        &#125;</span><br><span class="line">        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line"><span class="javascript">        mnum = <span class="built_in">Math</span>.floor(minutes);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span>(<span class="built_in">String</span>(mnum).length ==<span class="number">1</span> )&#123;</span></span><br><span class="line"><span class="actionscript">                  mnum = <span class="string">"0"</span> + mnum;</span></span><br><span class="line">        &#125;</span><br><span class="line">        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line"><span class="javascript">        snum = <span class="built_in">Math</span>.round(seconds);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span>(<span class="built_in">String</span>(snum).length ==<span class="number">1</span> )&#123;</span></span><br><span class="line"><span class="actionscript">                  snum = <span class="string">"0"</span> + snum;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.getElementById(<span class="string">"timeDate"</span>).innerHTML = <span class="string">"⌛ 本站已安全运行&amp;nbsp"</span>+dnum+<span class="string">"&amp;nbsp天"</span>;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.getElementById(<span class="string">"times"</span>).innerHTML = hnum + <span class="string">"&amp;nbsp小时&amp;nbsp"</span> + mnum + <span class="string">"&amp;nbsp分&amp;nbsp"</span> + snum + <span class="string">"&amp;nbsp秒"</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    setInterval(<span class="string">"createtime()"</span>,<span class="number">250</span>);</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span> <span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+
+                </div>
+            </div>
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>冼仙
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://loafing.cn/posts/18338.html">https://loafing.cn/posts/18338.html</a>
+        </p>
+        
+            <strong>
+                <p>本站所有文章除特别声明外，均采用 <a href="/posts/Creative-Commons-licenses.html#CC-BY-NC-SA-4-0" title="署名-非商业性使用-相同方式共享">CC BY-NC-SA 4.0协议</a> 。转载请注明原作者及出处！</p>
+
+            </strong>
+        
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020 七月 13日 , 星期一 , 01:05 凌晨
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
+    
+        <a href="/categories/%E5%8E%9F%E5%88%9B/" class="post-cats__link button">原创</a>
+    
+    
+</div> 
+             
+        </article>
+        
+            <div class="post__comments content-card">
+                
+    <h4 style="margin-top: 0;">评论</h4>
+    
+        <div id="disqus_thread">您所在的地区可能无法访问 Disqus 评论系统，请切换网络环境再尝试。</div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+            </div>
+        
+    </div>
+
+
+</main>
+<footer class="footer">
+     
+
+
+     
+  
+    
+        
+            <p><a href="mailto:forzqx@qq.com" title="要紧事请发邮件，评论不一定及时回复">Email</a></p>
+
+        
+            <p>Copyright © 2020</p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
+
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+    
+<script src="/js/b2t.js"></script>
+
+
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
+            <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+            <script>
+                new DisqusJS({
+                    shortname: 'loafing',
+                    siteName: '若风',
+                    api: 'https://disqus.skk.moe/disqus/',
+                    apikey: 'rIX6mM39eSMZlAnZCchjnNRaL4sRMZvbUICi5oLnDShkSE23zY5Vw2EZ7dGwYHBn',
+                    admin: 'CyberLoafing',
+                    identifier: 'posts/18338.html',
+                    url: 'https://loafing.cn/posts/18338.html',
+                    nesting: '4'
+                });
+            </script>
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+    </body>
+</html>

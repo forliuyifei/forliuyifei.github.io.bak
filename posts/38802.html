@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/img/dog.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>「记录」本站用到的插件 | 若风</title>
+    
+        <meta name="keywords" content="undefinedhexo, Loafing-around,INFP,Movies,Books,Hexo-theme-Cards,RSS订阅">
+    
+
+    <!-- OpenGraph -->
+     
+        <meta name="description" content="杂七杂八，尽量实用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「记录」本站用到的插件">
+<meta property="og:url" content="https://loafing.cn/posts/38802.html">
+<meta property="og:site_name" content="若风">
+<meta property="og:description" content="杂七杂八，尽量实用">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/hexo-plugins.webp">
+<meta property="article:published_time" content="2020-07-09T03:33:15.000Z">
+<meta property="article:modified_time" content="2020-07-12T15:17:42.195Z">
+<meta property="article:author" content="冼仙">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/hexo-plugins.webp">
+    
+
+    <!-- feed -->
+    
+        <link rel="alternate" href="/atom.xml" title="若风">
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/solarized-light.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/solarized-dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+        
+            <meta name="google-site-verification" content="jjL9uTbb2Bhw0hj9Ut91Eii6UOfQ8BE8lWnmuGkSZ0k" /> 
+        
+            <meta name="baidu-site-verification" content="IIwBCrwDVB" /> 
+        
+            <meta name="sogou_site_verification" content="OuuJto9tkO"/> 
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="若风" type="application/atom+xml">
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+<script src="/assets/js/DPlayer.min.js"></script></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                若风 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="cover-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="cover-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="cover-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到顶部" title="回到顶部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a href="https://liuyifei.club" target="_blank" rel="noopener" class="dropdown-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="dropdown-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="dropdown-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        「记录」本站用到的插件
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/07/" class="button" style="color: #808080;">
+    2020 七月 9日 , 星期四 , 11:33 中午
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/%E5%8E%9F%E5%88%9B/" class="button">原创</a>
+
+ 
+        
+        
+     
+ 
+
+  
+    </div>
+</div>
+
+
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#短链生成"><span class="toc-text">短链生成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可视化编辑"><span class="toc-text">可视化编辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章置顶"><span class="toc-text">文章置顶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章加密"><span class="toc-text">文章加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章隐藏"><span class="toc-text">文章隐藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成feed订阅（RSS）"><span class="toc-text">生成feed订阅（RSS）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站点地图-sitemap"><span class="toc-text">站点地图 sitemap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#音乐播放-aplayer"><span class="toc-text">音乐播放 aplayer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#视频播放-dplayer"><span class="toc-text">视频播放 dplayer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Instagram分享"><span class="toc-text">Instagram分享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#处理前-后图片展示"><span class="toc-text">处理前&#x2F;后图片展示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#豆瓣电影-读书-音乐卡片"><span class="toc-text">豆瓣电影&#x2F;读书&#x2F;音乐卡片</span></a></li></ol>
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                    
+    <img alt="Cover Image" src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/hexo-plugins.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/Cover/hexo-plugins.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==">
+ 
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 <span id="expire-date"></span> 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-07-12"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <h3 id="短链生成"><a href="#短链生成" class="headerlink" title="短链生成"></a><a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">短链生成</a></h3><h3 id="可视化编辑"><a href="#可视化编辑" class="headerlink" title="可视化编辑"></a><a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener">可视化编辑</a></h3><h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a><a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">文章置顶</a></h3><h3 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><a href="https://github.com/MikeCoder/hexo-blog-encrypt" target="_blank" rel="noopener">文章加密</a></h3><h3 id="文章隐藏"><a href="#文章隐藏" class="headerlink" title="文章隐藏"></a><a href="https://github.com/printempw/hexo-hide-posts" target="_blank" rel="noopener">文章隐藏</a></h3><h3 id="生成feed订阅（RSS）"><a href="#生成feed订阅（RSS）" class="headerlink" title="生成feed订阅（RSS）"></a><a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">生成feed订阅（RSS）</a></h3><h3 id="站点地图-sitemap"><a href="#站点地图-sitemap" class="headerlink" title="站点地图 sitemap"></a><a href="https://github.com/hexojs/hexo-generator-sitemap" target="_blank" rel="noopener">站点地图 sitemap</a></h3><h3 id="音乐播放-aplayer"><a href="#音乐播放-aplayer" class="headerlink" title="音乐播放 aplayer"></a>音乐播放 <a href="https://github.com/MoePlayer/hexo-tag-aplayer" target="_blank" rel="noopener">aplayer</a></h3><ul>
+<li><figure class="highlight clojure"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"7635339557"</span> <span class="string">"tencent"</span> <span class="string">"playlist"</span> <span class="string">"order:random"</span> <span class="string">"preload:none"</span>%&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
+    <div id="aplayer-nHArppXK" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="7635339557" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86" data-order="random"
+    ></div>
+
+
+<h3 id="视频播放-dplayer"><a href="#视频播放-dplayer" class="headerlink" title="视频播放 dplayer"></a>视频播放 <a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">dplayer</a></h3><ul>
+<li><figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">"url=https://lyfclub.herokuapp.com/videos/%E5%88%98%E4%BA%A6%E8%8F%B2.mp4"</span>  <span class="string">"pic=https://wxt.sinaimg.cn/thumb300/006UN1LVgy1gfauot0mgvj30go0byt97.jpg?tags=%5B%5D"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#FADFA3"</span> <span class="string">"autoplay=false"</span> %&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://lyfclub.herokuapp.com/videos/%E5%88%98%E4%BA%A6%E8%8F%B2.mp4","pic":"https://wxt.sinaimg.cn/thumb300/006UN1LVgy1gfauot0mgvj30go0byt97.jpg?tags=%5B%5D"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+<h3 id="Instagram分享"><a href="#Instagram分享" class="headerlink" title="Instagram分享"></a><a href="https://github.com/tea3/hexo-tag-instagram" target="_blank" rel="noopener">Instagram分享</a></h3><ul>
+<li><figure class="highlight crystal"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;% instagram <span class="literal">false</span> <span class="symbol">https:</span>/<span class="regexp">/www.instagram.com/p</span><span class="regexp">/B2vyQrxHuIN/</span> <span class="number">100</span>% %&#125;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<div class="instagram-wrapper"><blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; padding:0; width:99.375%; width:-webkit-calc(100%- 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B2vyQrxHuIN/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank"></a></p></div></blockquote></div><script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+
+<h3 id="处理前-后图片展示"><a href="#处理前-后图片展示" class="headerlink" title="处理前/后图片展示"></a><del><a href="https://github.com/tea3/hexo-tag-twentytwenty" target="_blank" rel="noopener">处理前/后图片展示</a></del></h3><p>主题冲突，弃用</p>
+<h3 id="豆瓣电影-读书-音乐卡片"><a href="#豆瓣电影-读书-音乐卡片" class="headerlink" title="豆瓣电影/读书/音乐卡片"></a><a href="https://github.com/TankNee/hexo-douban-card" target="_blank" rel="noopener">豆瓣电影/读书/音乐卡片</a></h3><figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> movie 24745500 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> book 30376420 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> music 35099703 %&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> movie 24745500 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> book 30376420 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> music 35099703 %&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> movie 1302836 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">douban</span> movie 2076181 %&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>爆哭, 原来是这个东西报错, 浪费一下午+一晚上的时间😥😥😥</p>
+
+                </div>
+            </div>
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>冼仙
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://loafing.cn/posts/38802.html">https://loafing.cn/posts/38802.html</a>
+        </p>
+        
+            <strong>
+                <p>本站所有文章除特别声明外，均采用 <a href="/posts/Creative-Commons-licenses.html#CC-BY-NC-SA-4-0" title="署名-非商业性使用-相同方式共享">CC BY-NC-SA 4.0协议</a> 。转载请注明原作者及出处！</p>
+
+            </strong>
+        
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020 七月 12日 , 星期日 , 23:17 晚上
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
+    
+        <a href="/categories/%E5%8E%9F%E5%88%9B/" class="post-cats__link button">原创</a>
+    
+    
+        <a href="/tags/hexo/" class="post-tags__link button"># hexo</a>
+    
+</div> 
+             
+        </article>
+        
+            <div class="post__comments content-card">
+                
+    <h4 style="margin-top: 0;">评论</h4>
+    
+        <div id="disqus_thread">您所在的地区可能无法访问 Disqus 评论系统，请切换网络环境再尝试。</div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+            </div>
+        
+    </div>
+
+
+</main>
+<footer class="footer">
+     
+
+
+     
+  
+    
+        
+            <p><a href="mailto:forzqx@qq.com" title="要紧事请发邮件，评论不一定及时回复">Email</a></p>
+
+        
+            <p>Copyright © 2020</p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
+
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+    
+<script src="/js/b2t.js"></script>
+
+
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
+            <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+            <script>
+                new DisqusJS({
+                    shortname: 'loafing',
+                    siteName: '若风',
+                    api: 'https://disqus.skk.moe/disqus/',
+                    apikey: 'rIX6mM39eSMZlAnZCchjnNRaL4sRMZvbUICi5oLnDShkSE23zY5Vw2EZ7dGwYHBn',
+                    admin: 'CyberLoafing',
+                    identifier: 'posts/38802.html',
+                    url: 'https://loafing.cn/posts/38802.html',
+                    nesting: '4'
+                });
+            </script>
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+    </body>
+</html>
