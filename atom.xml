@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://loafing.cn/"/>
-  <updated>2020-07-12T17:05:51.618Z</updated>
+  <updated>2020-07-13T14:04:57.078Z</updated>
   <id>https://loafing.cn/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于RSS订阅的二三事</title>
+    <link href="https://loafing.cn/posts/RSS-for-what.html"/>
+    <id>https://loafing.cn/posts/RSS-for-what.html</id>
+    <published>2020-07-13T06:06:45.615Z</published>
+    <updated>2020-07-13T14:04:57.078Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;订阅本站📌&quot;&gt;&lt;a href=&quot;#订阅本站📌&quot; class=&quot;headerlink&quot; title=&quot;订阅本站📌&quot;&gt;&lt;/a&gt;订阅本站📌&lt;/h2&gt;&lt;p&gt;如果您认为自己可能对本站&lt;del&gt;过去/现在/将来的&lt;/del&gt;内容感兴趣，欢迎 &lt;strong&gt;&lt;a href=&quot;/atom.xml&quot; title=&quot;atom.xml&quot;&gt;订阅本站RSS&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;本站文章将尽量保持全文Feed，部分内部样式复杂（乱）、元素过多的文章只提供标题和摘要。&lt;br&gt;当然出于私心还是希望有人多来光顾我这片小天地，能在底部评论交流、发表态度就更好了😶&lt;!--为减少网页载入等待时间，不引入阅读量统计，孤零零的感觉😶--&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="原创" scheme="https://loafing.cn/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="科普" scheme="https://loafing.cn/tags/%E7%A7%91%E6%99%AE/"/>
+    
+      <category term="工具" scheme="https://loafing.cn/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="知识传递计划" scheme="https://loafing.cn/tags/%E7%9F%A5%E8%AF%86%E4%BC%A0%E9%80%92%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>「折腾」Hexo-Cards主题自定义</title>
     <link href="https://loafing.cn/posts/18338.html"/>
     <id>https://loafing.cn/posts/18338.html</id>
     <published>2020-07-12T14:09:16.767Z</published>
-    <updated>2020-07-12T17:05:51.618Z</updated>
+    <updated>2020-07-13T12:21:39.077Z</updated>
     
     <summary type="html">
     
@@ -40,23 +65,20 @@
     <link href="https://loafing.cn/posts/41880.html"/>
     <id>https://loafing.cn/posts/41880.html</id>
     <published>2020-07-10T06:50:10.000Z</published>
-    <updated>2020-07-11T08:37:45.499Z</updated>
+    <updated>2020-07-13T13:35:36.971Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;blockquote&gt;
+&lt;p&gt;太久不学语文，时常忘记某些格式，又忍不住纠结，打断思路。&lt;br&gt;索性整理一番，固定写法有利于一气呵成。（错了再改嘛，不碍事）&lt;br&gt;还是那句话：&lt;strong&gt;记例句比记干巴巴的语法更有效。&lt;/strong&gt;
     
     </summary>
     
     
       <category term="学习" scheme="https://loafing.cn/categories/%E5%AD%A6%E4%B9%A0/"/>
     
+    
+      <category term="强迫症" scheme="https://loafing.cn/tags/%E5%BC%BA%E8%BF%AB%E7%97%87/"/>
     
   </entry>
   
@@ -84,17 +106,14 @@
     <link href="https://loafing.cn/posts/Fucking-WeChat.html"/>
     <id>https://loafing.cn/posts/Fucking-WeChat.html</id>
     <published>2020-07-10T01:07:00.000Z</published>
-    <updated>2020-07-10T08:53:10.443Z</updated>
+    <updated>2020-07-13T13:36:18.423Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;p&gt;&lt;strong&gt;转自 &lt;a href=&quot;https://www.darmau.com/inside-wechat-wall/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;城中村群租房：《微信墙中墙》，作者李大毛&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十亿用户有一亿教张小龙做产品，十分之一，可见不满的人比例真的太高了。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -108,10 +127,10 @@
   
   <entry>
     <title>「记录」看过的电影</title>
-    <link href="https://loafing.cn/posts/33970.html"/>
-    <id>https://loafing.cn/posts/33970.html</id>
+    <link href="https://loafing.cn/posts/movies-watched.html"/>
+    <id>https://loafing.cn/posts/movies-watched.html</id>
     <published>2020-07-09T04:42:30.000Z</published>
-    <updated>2020-07-12T17:01:14.135Z</updated>
+    <updated>2020-07-13T10:00:59.546Z</updated>
     
     <summary type="html">
     
@@ -132,7 +151,7 @@
     <link href="https://loafing.cn/posts/38802.html"/>
     <id>https://loafing.cn/posts/38802.html</id>
     <published>2020-07-09T03:33:15.000Z</published>
-    <updated>2020-07-12T15:17:42.195Z</updated>
+    <updated>2020-07-13T07:37:19.278Z</updated>
     
     <summary type="html">
     
@@ -153,11 +172,12 @@
     <link href="https://loafing.cn/posts/27097.html"/>
     <id>https://loafing.cn/posts/27097.html</id>
     <published>2020-07-09T00:55:55.000Z</published>
-    <updated>2020-07-11T07:18:59.547Z</updated>
+    <updated>2020-07-13T13:38:12.060Z</updated>
     
     <summary type="html">
     
-      原来用一个账号也行的
+      &lt;p&gt;&lt;strong&gt;原来用一个账号就行🤦‍♂️&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;前天新买的loafing.cn域名，想着再整一个博客，换上轻量极速的Card主题。&lt;/p&gt;
     
     </summary>
     
