@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/img/dog.png">
+
+
+    <!-- meta -->
+
+
+<title>「曲线救国」专注写作，拒绝折腾，暂时远离电脑，使用坚果云在手机上写博客 | 若风</title>
+
+
+    <meta name="keywords" content="工具, hexo, 保持专注, Loafing-around,Hexo-theme-Cards,RSS订阅源">
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="前情提要本文适用于那些总是忍不住折腾博客，花里胡哨的功能加一堆，原创文章（破事水）却没几篇的hexo bloggers（正如区区在下😅）。 具体操作 电脑安装打开 坚果云，按要求注册、登录。  定位到自己站点文章所属文件夹，比如我的xxx&#x2F;source&#x2F;_posts&#x2F;，右键，使用坚果云同步，不出意外都能同步成功，显示绿色小勾✅。  手机安装打开 坚果云Markdown，登录。  默认新建一个.m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「曲线救国」专注写作，拒绝折腾，暂时远离电脑，使用坚果云在手机上写博客">
+<meta property="og:url" content="https://loafing.cn/posts/46393.html">
+<meta property="og:site_name" content="若风">
+<meta property="og:description" content="前情提要本文适用于那些总是忍不住折腾博客，花里胡哨的功能加一堆，原创文章（破事水）却没几篇的hexo bloggers（正如区区在下😅）。 具体操作 电脑安装打开 坚果云，按要求注册、登录。  定位到自己站点文章所属文件夹，比如我的xxx&#x2F;source&#x2F;_posts&#x2F;，右键，使用坚果云同步，不出意外都能同步成功，显示绿色小勾✅。  手机安装打开 坚果云Markdown，登录。  默认新建一个.m">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/jgytest.webp">
+<meta property="article:published_time" content="2020-07-15T10:06:00.000Z">
+<meta property="article:modified_time" content="2020-09-19T06:45:22.042Z">
+<meta property="article:author" content="冼仙">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="保持专注">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/jgytest.webp">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/solarized-light.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/solarized-dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+        
+    
+
+    
+    
+
+    
+    <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+
+
+     
+
+    <!-- custom head -->
+
+    
+        <meta name="google-site-verification" content="jjL9uTbb2Bhw0hj9Ut91Eii6UOfQ8BE8lWnmuGkSZ0k" /> 
+    
+        <meta name="baidu-site-verification" content="IIwBCrwDVB" /> 
+    
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="若风" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                若风
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://travellings.now.sh/" class="navbar-menu button">
+                        开往
+                    </a>
+                
+                    <a href="/archives/" class="navbar-menu button">
+                        归档
+                    </a>
+                
+                    <a target="_blank" rel="noopener" href="https://liuyifei.club" class="navbar-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="navbar-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="navbar-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+        
+        
+    <a href="javaScript:void(0);" rel="external nofollow noreferrer" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+         
+    <a href="javaScript:void(0);" rel="external nofollow noreferrer" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+        </svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://travellings.now.sh/" class="dropdown-menu button">
+                        开往
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a target="_blank" rel="noopener" href="https://liuyifei.club" class="dropdown-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/atom.xml" class="dropdown-menu button">
+                        订阅
+                    </a>
+                
+                    <a href="/questions/" class="dropdown-menu button">
+                        FAQ
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
+
+
+<script defer src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+            <main class="main">
+    
+<div class="post-title">
+    <h1 class="post-title__text">
+        「曲线救国」专注写作，拒绝折腾，暂时远离电脑，使用坚果云在手机上写博客
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2020/07/" class="post-meta__date button">
+    2020 七月 15日 , 星期三 , 18:06 晚上
+</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%E5%8E%9F%E5%88%9B/" class="button">原创</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C"><span class="toc-text">具体操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E7%8E%A9%E6%B3%95"><span class="toc-text">更多玩法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E6%9C%BA%E7%9B%B4%E6%8E%A5%E9%A2%84%E8%A7%88%E7%BD%91%E9%A1%B5"><span class="toc-text">手机直接预览网页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%88%9B%E4%BD%9C"><span class="toc-text">多人协同创作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E5%B7%A5%E5%85%B7"><span class="toc-text">其它工具</span></a></li></ol></li></ol></li></ol>
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+    
+        <div class="post-thumbnail lazyload" data-bg="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/jgytest.webp"></div>
+    
+ 
+                
+            </div>
+            <div class="post__content">
+                <h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>本文适用于那些总是忍不住折腾博客，花里胡哨的功能加一堆，原创文章（破事水）却没几篇的hexo bloggers（正如区区在下😅）。</p>
+<h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><ul>
+<li><p>电脑安装打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianguoyun.com/downloads">坚果云</a>，按要求注册、登录。</p>
+</li>
+<li><p>定位到自己站点文章所属文件夹，比如我的<code>xxx/source/_posts/</code>，右键，<code>使用坚果云同步</code>，不出意外都能同步成功，显示绿色小勾✅。</p>
+</li>
+<li><p>手机安装打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.coolapk.com/apk/nutstore.android.markdown">坚果云Markdown</a>，登录。</p>
+</li>
+<li><p>默认新建一个.md文档，按照hexo文章格式进行写作……（可以保存一份自用 front matter 头部信息模板方便以后复制粘贴使用）<br><img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/jgytest.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/jgytest.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="test"></p>
+</li>
+<li><p>保存示例看下图，最好云端本地一起保存。<br><img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/Screenshot_20200714-230018.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/Screenshot_20200714-230018.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg=="></p>
+</li>
+<li><p>打开电脑看看能否成功同步。如果手机保存文件后仍停留在编辑状态，电脑这边的文件将被锁定🔒，防止误操作互相覆盖。<br><img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/Snipaste_2020-07-14_23-03-03.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/Snipaste_2020-07-14_23-03-03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="Snipaste_2020-07-14_23-03-03"></p>
+</li>
+<li><p>对了，电脑最好已经处于本地运行hexo服务的状态，它会检测添加进入<code>_post</code>文件夹的.md文件并根据你的配置情况自动补充头部信息。比如我打开刚刚保存同步的这篇文章，可以看见它自动生成了<code>abbrlink: </code>这一项。只是我自己加的<code>categories: 原创</code>不知道为什么又变成默认的未分类了🤔<br><img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/1594741659556.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/1594741659556.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg=="></p>
+</li>
+<li><p>用浏览器看看本地运行情况，完美！<br><img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/1594741664439.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/1594741664439.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="BEB[7}`VI336WAOB3}Q]6OB"></p>
+</li>
+<li><p>只要网络通畅，从今而后便可安心地在手机上随手写作，如果担心<strong>坚果云Markdown</strong>不稳定或认为其界面逻辑有待改进，也不妨先使用其它markdown工具（例如 纯纯写作 ）进行舒服畅快的文字记录，再复制粘贴到这边保存同步。</p>
+</li>
+<li><p>需要部署使网站上线的时候再开电脑运行<code>hexo clean&amp;&amp;hexo g&amp;&amp;hexo d</code></p>
+</li>
+</ul>
+<p>整个流程下来其实很简单，坚果云大概是最适合此类工作的云服务。</p>
+<hr>
+<h2 id="更多玩法"><a href="#更多玩法" class="headerlink" title="更多玩法"></a>更多玩法</h2><h3 id="手机直接预览网页"><a href="#手机直接预览网页" class="headerlink" title="手机直接预览网页"></a>手机直接预览网页</h3><p>如果手机电脑处于同一局域网，电脑固定IP地址，手机浏览器直接打开<code>192.168.xxx.xxx:4000</code>，便可直接在手机上预览站点效果，随时刷新，避免可能出现的排版错乱。<br>demo：<img src="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/demo.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/forliuyifei/img@mater/img/2020/7/demo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="demo"></p>
+<p>我这里把端口改成了3000</p>
+<blockquote>
+<p>弱水三千的三千<br>Love you three  thousand 的三千</p>
+</blockquote>
+<p>电脑IP地址用cmd运行<code>ipconfig</code>即可很方便地查看。</p>
+<h3 id="多人协同创作"><a href="#多人协同创作" class="headerlink" title="多人协同创作"></a>多人协同创作</h3><p>hexo作为一款静态博客生成器，有着诸多不便，其中之一就是不能像WordPress和typecho那样添加“投稿者帐户-Contributor”。<br>如果在_post文件夹下面再分别创建几个文件夹并设置访问权限，交给不同的人写写写，互不干扰，最后再由管理员发布上线，或许也是一种曲线救国的方式🤔</p>
+<hr>
+<p>这是我在手机上写的第一篇博文👻   </p>
+<blockquote>
+<p>原来坚果云Markdown也（近似）支持实时预览 </p>
+</blockquote>
+<p>顺便附一份坚果云官网主要功能介绍：</p>
+<ul>
+<li>全平台自动同步。将任何文件夹同步到“云端”、电脑、手机、iPad，保证您随时访问最新文件</li>
+<li>协同办公。可设置文件夹访问权限，文件发生任意修改均会被同步至所有设备，保证同事间版本一致    </li>
+<li>邮件/链接分享。只需点击鼠标，即可通过邮件/URL链接共享文件、照片、视频    </li>
+<li>加密备份。同步文件夹中的文件会被自动加密并备份到云存储，即便电脑损坏，仍可从云存储找回    </li>
+<li>文件时光机。只需点击鼠标，即可恢复之前的文件版本；即使是数月前删除的文件，也可在回收站中找回。</li>
+</ul>
+<hr>
+<p>啥？你问我为什么不干脆在手机上也搭建一个hexo？</p>
+<ul>
+<li>因为电脑运行速度更快更稳定；</li>
+<li>因为刷机狂很容易变成翻车王，不想在data解密失败的时候掐死忘记备份的自己。</li>
+</ul>
+<p>为什么不用Typecho或WordPress？</p>
+<ul>
+<li>没钱💸，租不起服务器</li>
+<li><a target="_blank" rel="noopener" href="https://liuyifei.club/about/">more</a></li>
+</ul>
+<hr>
+<h4 id="其它工具"><a href="#其它工具" class="headerlink" title="其它工具"></a>其它工具</h4><p>本文用到的其它工具：</p>
+<ul>
+<li>vscode</li>
+<li>小白图床</li>
+<li>带壳截图pro</li>
+<li>PPIICC</li>
+</ul>
+<hr>
+<p>最后，请先弄清坚果云的服务定位与其它“网盘”有何区别，结合国情，再讨论孰优孰劣的话题。</p>
+<p>嗷呜~~不扯了，晚安。</p>
+
+            </div>
+            
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>冼仙
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://loafing.cn/posts/46393.html">https://loafing.cn/posts/46393.html</a>
+        </p>
+        
+            <strong>
+                <p>文章默认采用 <a href="/posts/Creative-Commons-licenses.html#CC-BY-NC-SA-4-0" title="署名-非商业性使用-相同方式共享（点击链接查看具体介绍）">CC BY-NC-SA 4.0 许可协议</a>，著作权归原作者所有。商业转载需获得授权，非商业转载请注明出处！</p>
+
+            </strong>
+        
+    </div>
+ 
+            <div class="post-footer__meta">
+    <p>
+        最后更新于：2020 九月 19日 , 星期六 , 14:45 下午
+    </p>
+</div> 
+            <div class="post-meta__cats">
+    
+        <a href="/categories/%E5%8E%9F%E5%88%9B/" class="post-cats__link button">原创</a>
+    
+    
+        <a href="/tags/%E5%B7%A5%E5%85%B7/" class="post-tags__link button"># 工具</a>
+    
+        <a href="/tags/hexo/" class="post-tags__link button"># hexo</a>
+    
+        <a href="/tags/%E4%BF%9D%E6%8C%81%E4%B8%93%E6%B3%A8/" class="post-tags__link button"># 保持专注</a>
+    
+</div> 
+        </article>
+        
+            <div class="post__comments content-card" id="comment">
+                
+    <h4>评论</h4>
+    
+    
+    <div id="disqus_thread">您所在的地区可能无法访问 Disqus 评论系统，请切换网络环境再尝试。</div>
+
+    
+    
+    
+    
+    
+    
+    
+
+
+            </div>
+        
+    </div>
+
+
+</main>
+
+            <footer class="footer">
+    
+
+
+    
+     
+ 
+
+ 
+    
+    
+        
+            <p>© <a href="/posts/Creative-Commons-licenses.html#CC-BY-NC-SA-4-0" title="署名-非商业性使用-相同方式共享（点击链接查看具体介绍）">CC BY-NC-SA 4.0</a></p>
+
+        
+            <p>⚡ <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jsdelivr.com/">jsDelivr</a> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dash.cloudflare.com/">CloudFlare</a> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://unsplash.com/">Unsplash</a></p>
+
+        
+    
+    
+    <div> <center>
+        <span id="timeDate">世间安得双全法</span>
+        <span id="times">不负如来不负卿</span>
+        <script>
+        var now = new Date();
+        function createtime(){
+            var grt= new Date("07/09/2020 08:00:00");//此处修改你的建站时间或者网站上线时间
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){
+                hnum = "0" + hnum;
+            }
+            minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if(String(mnum).length ==1 ){
+                      mnum = "0" + mnum;
+            }
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if(String(snum).length ==1 ){
+                      snum = "0" + snum;
+            }
+            document.getElementById("timeDate").innerHTML = "⌛ 本站已安全运行&nbsp"+dnum+"&nbsp天";
+            document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+        }
+        setInterval("createtime()",250);
+        </script> </center>
+      </div>
+</footer>
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+
+
+ 
+
+
+    
+
+
+ 
+
+ 
+    <script defer src="/js/b2t.js"></script>
+
+
+
+
+
+    
+
+    
+    <script>
+        function loadComment() {
+            let e, i;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                new DisqusJS({
+                    shortname: 'loafing',
+                    siteName: '若风',
+                    api: 'https://disqus.skk.moe/disqus/',
+                    apikey: 'rIX6mM39eSMZlAnZCchjnNRaL4sRMZvbUICi5oLnDShkSE23zY5Vw2EZ7dGwYHBn',
+                    admin: 'CyberLoafing',
+                    identifier: 'posts/46393.html',
+                    url: 'https://loafing.cn/posts/46393.html',
+                    nesting: '4'
+                });
+            };
+            (i = document.createElement("link")).rel = "stylesheet",
+            i.href = 'https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css',
+            document.head.appendChild(i);
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+    </body>
+</html>

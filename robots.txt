@@ -1,0 +1,16 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /posts/
+Allow: /links/
+
+
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /weibo/
+Disallow: /home/
+Disallow: /Donate/
+Disallow: /Kindle/
+
+Sitemap: https://loafing.cn/sitemap.xml
