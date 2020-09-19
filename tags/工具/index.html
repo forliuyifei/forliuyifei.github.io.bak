@@ -42,15 +42,15 @@
 
 
     
-<link rel="stylesheet" href="/css/style/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/css/style/main.css">
  
 
 
     
-<link rel="stylesheet" href="/css/style/dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/css/style/dark.css">
 
     
-<script src="/js/darkmode.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/js/darkmode.js"></script>
 
 
 
@@ -59,7 +59,7 @@
     
 
     
-    <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/css/style/note.css" media="none" onload="this.media='all'">
 
 
      
@@ -186,6 +186,34 @@
             </script>
         
     </div>
+
+    <script src="//cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script>
+        var myDate = new Date;
+        var mon = myDate.getMonth() + 1; //获取当前月
+        var date = myDate.getDate(); //获取当前日
+        var days=['3.4','4.4','5.12','7.7','9.9','9.18','12.13']; //在这里自定义日期
+        for (var day of days) {
+            var d=day.split('.');
+            if (mon == d[0] && date == d[1]) {
+                var gray='grayscale(100%)'; //自动变灰
+                $("html,body").css({"filter":'gray !important;',"filter":"progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)","filter":gray,"-webkit-filter":gray,'-moz-filter':gray,'-ms-filter':gray,'-o-filter':gray});
+                break;
+            }
+        }
+    </script>
+
+  <script>
+    window.FPConfig = {
+      delay: 0,    // 浏览器空闲多少秒后开始预加载
+      ignoreKeywords: ["https://travellings.now.sh/", "https://www.jsdelivr.com/", "https://dash.cloudflare.com/", "https://unsplash.com/", "/atom.xml", "#"],    // 不进行预加载的链接，例 ["#", "/about"]
+      maxRPS: 3,    // 每秒最大加载数
+      hoverDelay: 50    // 鼠标悬浮后预加的延迟，毫秒单位
+      // 上方数值未默认值
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+
 </header>
 
 
@@ -382,7 +410,7 @@
  
 
  
-    <script defer src="/js/b2t.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/forliuyifei/forliuyifei.github.io.bak@master/js/b2t.js"></script>
 
 
 
