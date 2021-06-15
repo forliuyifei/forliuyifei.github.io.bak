@@ -1,0 +1,17 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /posts/
+Allow: /about/
+Allow: /tags/
+Allow: /categories/*
+
+Disallow: /categories/
+Disallow: /thoughts/
+Disallow: /music/
+Disallow: /faq/
+Disallow: /friends/
+Disallow: /messageboard/
+
+Sitemap: https://loafing.cn/sitemap.xml
